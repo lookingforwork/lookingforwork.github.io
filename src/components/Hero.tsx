@@ -10,7 +10,7 @@ export const Hero = () => {
           <h1 className="text-4xl font-bold leading-snug tracking-tight 
           text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
             <span className="relative">
-              {/* <span className="absolute inset-0 bg-gray-300"></span> */}
+              {/* <span className="absolute inset-0 bg-gray-300"></span> test */}
               <span className="font-extrabold">Effortlessly </span> 
               <span className="absolute top-1.5 left-0 transform -translate-x-1/2 -translate-y-1/2">
                 <Image 
