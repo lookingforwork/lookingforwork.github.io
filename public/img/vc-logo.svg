@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="23.995975mm"
+   height="28.904209mm"
+   viewBox="0 0 23.995975 28.904209"
+   version="1.1"
+   id="svg1585"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="vc-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1587"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="99.918303"
+     inkscape:cy="251.35698"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1582" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-78.465156,-68.575713)">
+    <g
+       id="g1652"
+       transform="translate(50.8481,-117.94774)">
+      <rect
+         style="font-variation-settings:'wght' 600;fill:#372f9e;fill-opacity:1;stroke:none;stroke-width:0.116729;stroke-linecap:round;stroke-linejoin:round"
+         id="rect1646"
+         width="18.609274"
+         height="24.419392"
+         x="27.617056"
+         y="191.00827"
+         ry="3.0713215" />
+      <rect
+         style="font-variation-settings:'wght' 600;fill:#3e37b6;fill-opacity:1;stroke:none;stroke-width:0.116729;stroke-linecap:round;stroke-linejoin:round"
+         id="rect1648"
+         width="18.609274"
+         height="24.419392"
+         x="30.207558"
+         y="188.75067"
+         ry="3.0713215" />
+      <rect
+         style="font-variation-settings:'wght' 600;fill:#4f46e5;fill-opacity:1;stroke:none;stroke-width:0.116729;stroke-linecap:round;stroke-linejoin:round"
+         id="rect1650"
+         width="18.609274"
+         height="24.419392"
+         x="33.003757"
+         y="186.52345"
+         ry="3.0713215" />
+    </g>
+  </g>
+</svg>
