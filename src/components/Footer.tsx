@@ -1,17 +1,27 @@
-import React from "react";
-import { Container } from "@/components/Container";
+import Image from "next/image"
 
-export function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-  const legal = ["Terms", "Privacy", "Legal"];
+export const Footer = () => {
   return (
-    <footer>
-      <Container>
-        <div className="text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by OPT.
+      <footer>
+        <div className="container flex flex-row flex-wrap justify-center items-center p-8 mx-auto
+        text-sm text-gray-600 text-center">
+          <p>
+            Copyright © {new Date().getFullYear()}. Made with ♥ by OPT.&nbsp; 
+          </p>
+          <div className="flex gap-x-1">
+            Follow us on
+            <a href="https://www.linkedin.com/company/guardnote/?viewAsMember=true" target="_blank" rel="noopener">
+              <span className="sr-only">Linkedin</span>
+              <Image
+                  src="/img/linkedin-grey.svg"
+                  alt="N"
+                  width="32"
+                  height="32"
+                  className="w-5"
+                />
+            </a>
+          </div>
         </div>
-      </Container>     
-    </footer>
-  );
+      </footer>
+  )
 }
-

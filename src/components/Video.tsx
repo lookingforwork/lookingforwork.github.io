@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { Container } from "@/components/Container";
 
 interface VideoProps {
   videoId: string;
@@ -12,8 +11,8 @@ export function Video({ videoId }: Readonly<VideoProps>) {
   if (!videoId) return null;
 
   return (
-    // <Container>
-      <div className="relative w-full aspect-video max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl bg-indigo-300 cursor-pointer bg-gradient-to-tr from-purple-400 to-indigo-700">
+    // <div className="flex items-center">
+      <div className="relative w-full aspect-video max-w-4xl mx-auto overflow-hidden rounded-md bg-indigo-300 cursor-pointer bg-gradient-to-tr from-purple-400 to-indigo-700">
         {!playVideo && (
           <button
             onClick={() => setPlayVideo(!playVideo)}
@@ -43,6 +42,6 @@ export function Video({ videoId }: Readonly<VideoProps>) {
           ></iframe>
         )}
       </div>
-    // </Container>
+    // </div>
   );
 }
