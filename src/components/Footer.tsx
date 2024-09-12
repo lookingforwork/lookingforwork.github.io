@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className="container flex flex-row flex-wrap justify-center items-center p-8 mx-auto
         text-sm text-gray-600 text-center">
           <p>
-            Copyright © {new Date().getFullYear()}. Made with ♥ by OPT.&nbsp; 
+            Copyright © {new Date().getFullYear()}. Made with ♥ by Opterum LTD.&nbsp; 
           </p>
           <div className="flex gap-x-1">
             Follow us on

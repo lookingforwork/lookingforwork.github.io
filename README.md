@@ -1,1 +1,1 @@
-Guardnote landing page
+BlueSide landing page
