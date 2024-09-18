@@ -40,7 +40,7 @@ export const Hero = () => {
         <CtaButton />
       </div>
       <div className="flex items-center justify-center w-full lg:w-1/2 mt-10 lg:mt-0">
-        <Video videoId="D4P9ucIXTI8" />
+        <Video videoId="hylzkVQBGrg" />
       </div>
     </section>
   );

@@ -33,7 +33,8 @@ const config: Config = {
       },
       colors: {
         blueside: {
-          DEFAULT: '#469ee8'
+          DEFAULT: '#469ee8',
+          600: '#408fd1'
         },
         bs_gray: {
           DEFAULT: '#343434'

@@ -20,10 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={'{inter.className} bg-gray-50'}>
         <div className="flex flex-col min-h-screen">
-          <div className="absolute inset-0 bg-grid-black/[0.035] mask-radial-faded"></div>
           <Navbar />
           {children}
           <Footer />
+          <div className="absolute inset-0 bg-grid-black/[0.035] mask-radial-faded -z-10"></div>
         </div>
       </body>
     </html>
