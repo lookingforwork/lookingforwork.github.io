@@ -7,6 +7,7 @@ export const CtaButton = () => {
         href="https://docs.google.com/forms/d/e/1FAIpQLSdQTOjOiPgFbajD8vm9JU4vi-ez7uq4FmfIBiYRqkg67gfI6Q/viewform?usp=sf_link"
         target="_blank"
         rel="noopener"
+        id="cta-button"
         className="inline-flex items-center justify-center whitespace-nowrap rounded-md
               focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none
               disabled:opacity-50 bg-blueside text-white shadow hover:bg-blueside/90 px-8 py-4 group relative
