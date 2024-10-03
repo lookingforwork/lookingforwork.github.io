@@ -54,8 +54,6 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen">
           <Navbar />
           {children}
-          <Footer />
-          <div className="absolute inset-0 bg-grid-black/[0.035] mask-radial-faded -z-10"></div>
         </div>
       </body>
     </html>

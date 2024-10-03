@@ -3,7 +3,7 @@ import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 const svgToDataUri = require("mini-svg-data-uri");
- 
+
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
@@ -18,28 +18,31 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Alexandria"],
+      },
+      fontSize: {
+        title: "5rem",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       screens: {
-        'laptop': '1100px',
-         // => @media (min-width: 1100px) { ... }
-      },
-      fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        stock: [defaultTheme.fontFamily.sans],
+        laptop: "1100px",
+        // => @media (min-width: 1100px) { ... }
       },
       colors: {
         blueside: {
-          DEFAULT: '#469ee8',
-          600: '#408fd1'
+          DEFAULT: "#469ee8",
+          600: "#408fd1",
+          dark: "#1F2937",
         },
         bs_gray: {
-          DEFAULT: '#343434'
-        }
-      }
+          DEFAULT: "#343434",
+        },
+      },
     },
   },
   plugins: [
