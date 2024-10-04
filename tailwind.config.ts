@@ -22,7 +22,7 @@ const config: Config = {
         sans: ["Alexandria"],
       },
       fontSize: {
-        title: "5rem",
+        title: "5.2rem",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -37,7 +37,8 @@ const config: Config = {
         blueside: {
           DEFAULT: "#469ee8",
           600: "#408fd1",
-          dark: "#1F2937",
+          dark: "#202936",
+          //#1F2937
         },
         bs_gray: {
           DEFAULT: "#343434",
