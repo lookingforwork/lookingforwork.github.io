@@ -12,7 +12,7 @@ export const CtaButton = () => {
               focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none
               disabled:opacity-50 bg-blueside text-white shadow hover:bg-blueside/90 px-4 py-3 group relative
               w-36 overflow-hidden text-base font-normal transform-gpu ring-offset-current
-              transition-all duration-300 ease-out hover:ring-2 hover:ring-blueside hover:ring-offset-2"
+              transition-all duration-300 ease-out hover:ring-2 hover:ring-blueside hover:ring-offset-2 mb-3"
       >
         <span
           className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white
