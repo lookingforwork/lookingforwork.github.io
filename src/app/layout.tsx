@@ -42,7 +42,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={"{inter.className} bg-gray-50"}>
+      <body className={"{inter.className} bg-white"}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-MDFJB8Z8"
