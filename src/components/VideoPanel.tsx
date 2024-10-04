@@ -30,3 +30,5 @@ export const VideoPanel: React.FC = () => {
     </div>
   );
 };
+
+//todo: resizing
