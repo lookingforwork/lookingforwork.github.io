@@ -19,7 +19,7 @@ export const VideoPanel: React.FC = () => {
     <div className="fixed w-full h-full">
       <video
         ref={videoRef}
-        className="absolute w-full h-[108%] object-cover object-center"
+        className="absolute shrink w-full max-h-[108%] object-cover object-center"
         loop
         muted
         playsInline
@@ -30,5 +30,3 @@ export const VideoPanel: React.FC = () => {
     </div>
   );
 };
-
-//todo: resizing
