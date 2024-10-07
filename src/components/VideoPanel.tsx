@@ -16,7 +16,7 @@ export const VideoPanel: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed w-full h-full">
+    <div className="flex w-full h-full">
       <video
         ref={videoRef}
         className="absolute shrink w-full max-h-[108%] object-cover object-center"
