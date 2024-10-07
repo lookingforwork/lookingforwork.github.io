@@ -16,10 +16,10 @@ export const VideoPanel: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex w-full h-full">
+    <div className="flex flex-col items-center object-center w-full h-full">
       <video
         ref={videoRef}
-        className="absolute shrink w-full max-h-[108%] object-cover object-center"
+        className="flex shrink w-full max-h-[108%] object-cover object-center items-center max-w-[1200px]"
         loop
         muted
         playsInline
