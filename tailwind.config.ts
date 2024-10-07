@@ -22,6 +22,7 @@ const config: Config = {
         sans: ["Alexandria"],
       },
       fontSize: {
+        xxs: "0.65rem",
         title: "5.2rem",
       },
       backgroundImage: {
