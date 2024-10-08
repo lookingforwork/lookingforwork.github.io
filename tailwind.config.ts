@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 const svgToDataUri = require("mini-svg-data-uri");
@@ -44,6 +43,22 @@ const config: Config = {
         bs_gray: {
           DEFAULT: "#343434",
         },
+      },
+      keyframes: {
+        appear: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        "appear-500": "appear 0.5s ease-in-out",
+        "appear-1000": "appear 1.0s ease-in-out",
+        "appear-1500": "appear 1.5s ease-in-out",
+        "appear-2000": "appear 2.0s ease-in-out",
       },
     },
   },

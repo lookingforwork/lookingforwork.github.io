@@ -4,7 +4,7 @@ import { CtaButton } from "./CtaButton";
 export const Navbar = () => {
   return (
     <header className="bg-transparent relative z-50">
-      <div className="flex max-w-7xl mx-auto py-1 px-8 justify-between lg:justify-between">
+      <div className="animate-appear-500 flex max-w-7xl mx-auto py-1 px-8 justify-between lg:justify-between">
         <div className="flex items-center text-2xl text-gray-800">
           <span>
             <Image

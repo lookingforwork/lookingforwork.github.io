@@ -1,5 +1,5 @@
 import { FeatureOne } from "@/components/FeatureOne";
-import { LogoBanner } from "@/components/logoBanner";
+import { LogoBanner } from "@/components/LogoBanner";
 import { Hero } from "@/components/Hero";
 import { VideoPanel } from "@/components/VideoPanel";
 
