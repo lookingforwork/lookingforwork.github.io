@@ -14,7 +14,7 @@ export const VideoPanel: React.FC = () => {
   }, []);
 
   return (
-    <div className="animate-appear-2000 flex flex-col items-center">
+    <div className="animate-appear-2000 flex flex-col items-center mt-6 sm:mt-0">
       <video
         ref={videoRef}
         className="object-cover object-center"
