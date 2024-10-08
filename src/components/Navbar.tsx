@@ -7,7 +7,7 @@ export const Navbar = () => {
         <div className="flex items-center text-2xl text-gray-800">
           <span>
             <Image
-              src="/img/blueside.svg"
+              src="/img/BlueSide.svg"
               alt="BlueSide"
               width="32"
               height="32"
