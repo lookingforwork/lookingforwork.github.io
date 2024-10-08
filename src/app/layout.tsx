@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "BlueSide",
-  description: "Securely collaborate on legal documents inside Microsoft Word.",
+  description: "An AI tool for legal documents inside Microsoft Word.",
 };
 
 export default function RootLayout({
