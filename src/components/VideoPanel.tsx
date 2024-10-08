@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { Video } from "./Video";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 
 export const VideoPanel: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -16,10 +14,10 @@ export const VideoPanel: React.FC = () => {
   }, []);
 
   return (
-    <div className="animate-appear-2000 flex flex-col items-center object-center w-full h-full">
+    <div className="animate-appear-2000 flex flex-col items-center">
       <video
         ref={videoRef}
-        className="flex shrink w-full max-h-[108%] object-cover object-center items-center max-w-[1200px]"
+        className="object-cover object-center"
         loop
         muted
         playsInline
@@ -30,4 +28,3 @@ export const VideoPanel: React.FC = () => {
     </div>
   );
 };
-//max-h-[108%]

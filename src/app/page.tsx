@@ -5,11 +5,11 @@ import { VideoPanel } from "@/components/VideoPanel";
 
 export default function Home() {
   return (
-    <main className="flex-1 items-center md:items-start min-h-screen">
+    <main className="flex flex-col items-center min-h-screen max-w-7xl mx-auto px-6 sm:px-8">
       <Hero />
       <VideoPanel />
-      <LogoBanner />
-      <FeatureOne />
+      {/* <LogoBanner /> */}
+      {/* <FeatureOne /> */}
     </main>
   );
 }
