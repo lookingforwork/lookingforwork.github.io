@@ -42,7 +42,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={"{inter.className} bg-gray-50"}>
+      <body className={"{inter.className} bg-white"}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-MDFJB8Z8"
@@ -55,7 +55,6 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-          <div className="absolute inset-0 bg-grid-black/[0.035] mask-radial-faded -z-10"></div>
         </div>
       </body>
     </html>

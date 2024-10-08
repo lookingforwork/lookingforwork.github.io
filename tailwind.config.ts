@@ -1,9 +1,8 @@
 import type { Config } from "tailwindcss";
-
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 const svgToDataUri = require("mini-svg-data-uri");
- 
+
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
@@ -18,28 +17,49 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Alexandria"],
+      },
+      fontSize: {
+        xxs: "0.65rem",
+        title: "5.2rem",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       screens: {
-        'laptop': '1100px',
-         // => @media (min-width: 1100px) { ... }
-      },
-      fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        stock: [defaultTheme.fontFamily.sans],
+        laptop: "1100px",
+        // => @media (min-width: 1100px) { ... }
       },
       colors: {
         blueside: {
-          DEFAULT: '#469ee8',
-          600: '#408fd1'
+          DEFAULT: "#469ee8",
+          600: "#408fd1",
+          navy: "#1F2937",
+          dark: "#202936",
         },
         bs_gray: {
-          DEFAULT: '#343434'
-        }
-      }
+          DEFAULT: "#343434",
+        },
+      },
+      keyframes: {
+        appear: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        "appear-500": "appear 0.5s ease-in-out",
+        "appear-1000": "appear 1.0s ease-in-out",
+        "appear-1500": "appear 1.5s ease-in-out",
+        "appear-2000": "appear 2.0s ease-in-out",
+      },
     },
   },
   plugins: [

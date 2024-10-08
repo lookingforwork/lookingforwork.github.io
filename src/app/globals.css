@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/*
 @layer utilities {
   .mask-radial-faded {
     mask-image: radial-gradient(circle at center, black 70%, transparent 90%);
   }
 }
+*/
