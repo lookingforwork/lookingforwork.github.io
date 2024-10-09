@@ -10,7 +10,7 @@ export const DemoVideo = () => {
           important clause changes right inside MS Word.</p>
       </div>
       <div className="w-full p-4 sm:p-12 border rounded-xl">
-        <Video videoId="hylzkVQBGrg" />
+        <Video videoId="YBVI3Ob74xE" />
       </div>
     </div>
   )
