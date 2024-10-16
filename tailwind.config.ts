@@ -24,6 +24,9 @@ const config: Config = {
         xxs: "0.65rem",
         title: "5.2rem",
       },
+      fontWeight: {
+        subtitle: "350",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

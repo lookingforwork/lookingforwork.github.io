@@ -3,6 +3,9 @@ import { LogoBanner } from "@/components/LogoBanner";
 import { Hero } from "@/components/Hero";
 import { VideoPanel } from "@/components/VideoPanel";
 import { DemoVideo } from "@/components/DemoVideo";
+import { FeatureLights } from "@/components/FeatureLights";
+import { FeatureRag } from "@/components/FeatureRag";
+import { FeatureAction } from "@/components/FeatureAction";
 
 export default function Home() {
   return (
@@ -10,8 +13,12 @@ export default function Home() {
       <Hero />
       <VideoPanel />
       <LogoBanner />
+      <FeatureLights />
+      <FeatureAction />
+      <FeatureRag />
       <DemoVideo />
       {/* <FeatureOne /> */}
     </main>
   );
 }
+//add micrsfot founders hub invovlement
