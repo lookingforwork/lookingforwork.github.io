@@ -6,6 +6,7 @@ import { DemoVideo } from "@/components/DemoVideo";
 import { FeatureLights } from "@/components/FeatureLights";
 import { FeatureRag } from "@/components/FeatureRag";
 import { FeatureAction } from "@/components/FeatureAction";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <FeatureAction />
       <FeatureRag />
       <DemoVideo />
+      <Faq />
       {/* <FeatureOne /> */}
     </main>
   );

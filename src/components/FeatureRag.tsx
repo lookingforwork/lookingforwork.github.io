@@ -4,16 +4,16 @@ export const FeatureRag = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center px-24 py-6 lg:py-14">
       <div className="rounded-2xl min-w-[400px] h-[300px] max-w-[400px] overflow-hidden flex flex-row items-center justify-center">
-        <div className="min-w-[130px] h-44 bg-gray-100 shadow-xl drop-shadow-xl animate-moveLeft mx-[10px] p-3 font-light">
+        <div className="min-w-[130px] h-44 bg-gray-100 shadow-xl drop-shadow-xl animate-moveLeft mx-[10px] p-3 font-light text-blueside-dark">
           ------------------------------------------------------------------------------------------------------------
         </div>
-        <div className="min-w-[130px] h-44 bg-gray-100 shadow-xl drop-shadow-xl animate-moveLeft mx-[10px] p-3 font-light">
+        <div className="min-w-[130px] h-44 bg-gray-100 shadow-xl drop-shadow-xl animate-moveLeft mx-[10px] p-3 font-light text-blueside-dark">
           ------------------------------------------------------------------------------------------------------------
         </div>
-        <div className="min-w-[130px] h-44 bg-gray-100 shadow-xl drop-shadow-xl animate-moveLeft mx-[10px] p-3 font-light">
+        <div className="min-w-[130px] h-44 bg-gray-100 shadow-xl drop-shadow-xl animate-moveLeft mx-[10px] p-3 font-light text-blueside-dark">
           ------------------------------------------------------------------------------------------------------------
         </div>
-        <div className="min-w-[130px] h-44 bg-gray-100 shadow-xl drop-shadow-xl animate-moveLeft mx-[10px] p-3 font-light">
+        <div className="min-w-[130px] h-44 bg-gray-100 shadow-xl drop-shadow-xl animate-moveLeft mx-[10px] p-3 font-light text-blueside-dark">
           ------------------------------------------------------------------------------------------------------------
         </div>
       </div>
@@ -33,6 +33,4 @@ export const FeatureRag = () => {
 /*alternative summary
 
 AI model, fine-tuned with real lawyers, summarizes key document changes accurately and effectively.
-
-animation-delay-900
-style={{ left: "50%" }}*/
+*/
