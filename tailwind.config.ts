@@ -56,12 +56,17 @@ const config: Config = {
             opacity: "1",
           },
         },
+        moveLeft: {
+          "0%": { transform: "translateX(75px)" },
+          "100%": { transform: "translateX(-75px)" },
+        },
       },
       animation: {
         "appear-500": "appear 0.5s ease-in-out",
         "appear-1000": "appear 1.0s ease-in-out",
         "appear-1500": "appear 1.5s ease-in-out",
         "appear-2000": "appear 2.0s ease-in-out",
+        moveLeft: "moveLeft 2s linear infinite",
       },
     },
   },
