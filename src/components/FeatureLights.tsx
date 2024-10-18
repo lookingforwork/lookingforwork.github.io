@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const FeatureLights = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center px-4 sm:px-8 md:px-12 lg:px-24 py-6 lg:py-14">
+    <div className="flex flex-col lg:flex-row items-center justify-center px-0 sm:px-8 md:px-12 lg:px-24 py-6 lg:py-14">
       <div className="rounded-2xl w-full max-w-[400px] lg:min-w-[400px] h-[300px] overflow-hidden">
         <div className="relative p-4 sm:p-8">
           <div className="transition-all duration-500 absolute -left-12 hover:-left-4 top-4 flex h-80 w-full max-w-[384px] items-start justify-between rounded-xl bg-gray-100 p-4 sm:p-8 shadow-lg drop-shadow-2xl">
@@ -25,8 +25,8 @@ export const FeatureLights = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col mx-6 sm:mx-12 py-12 pl-0 lg:pl-24 lg:mx-0 lg:py-8 lg:w-1/2 xl:w-3/5 lg:shrink-0">
-        <div className="text-4xl lg:text-5xl text-blueside-dark mb-6">
+      <div className="flex flex-col mx-0 sm:mx-12 py-12 pl-0 lg:pl-24 lg:mx-0 lg:py-8 lg:w-1/2 xl:w-3/5 lg:shrink-0">
+        <div className="text-3xl sm:text-4xl lg:text-5xl text-blueside-dark mb-6">
           Never Miss a Crucial Change
         </div>
         <div className="sm:text-base lg:text-lg font-subtitle text-blueside-dark">
