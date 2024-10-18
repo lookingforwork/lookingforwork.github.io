@@ -31,7 +31,6 @@ export const FeatureRag = () => {
 };
 
 /*
-rounded-2xl w-full max-w-[400px] lg:min-w-[400px] h-[300px] overflow-hidden flex flex-col items-center
 alternative summary
 
 AI model, fine-tuned with real lawyers, summarizes key document changes accurately and effectively.

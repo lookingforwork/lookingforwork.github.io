@@ -37,37 +37,3 @@ export const FeatureLights = () => {
     </div>
   );
 };
-
-/*
-flex flex-col mx-12 py-12 pr-0 lg:pr-24 lg:mx-0 lg:py-8
-
-<Image
-        className="rounded-2xl"
-        src="/img/placeholder_2.jpg"
-        alt="trafficlights"
-        width={400}
-        height={400}
-      />
-      
-<div className="rounded-2xl min-w-[400px] h-[300px] overflow-hidden">
-        <div className="relative p-8">
-          <div className="absolute left-8 top-0 flex h-60 w-80 items-start justify-between rounded-lg bg-gray-100 p-4 shadow-lg drop-shadow-2xl">
-            <span className="absolute right-14 text-base font-light">
-              Critical
-            </span>
-            <span className="absolute right-0 mx-4 h-6 w-6 rounded-full bg-red-500"></span>
-          </div>
-          <div className="absolute left-4 top-16 flex h-60 w-80 items-start justify-between rounded-lg bg-gray-100 p-4 shadow-lg drop-shadow-2xl">
-            <span className="absolute right-14 text-base font-light">
-              Significant
-            </span>
-            <span className="absolute right-0 mx-4 h-6 w-6 rounded-full bg-yellow-400"></span>
-          </div>
-          <div className="absolute left-0 top-32 flex h-60 w-80 items-start justify-between rounded-lg bg-gray-100 p-4 shadow-lg drop-shadow-2xl">
-            <span className="absolute right-14 text-base font-light">
-              Minimal
-            </span>
-            <span className="absolute right-0 mx-4 h-6 w-6 rounded-full bg-green-500"></span>
-          </div>
-        </div>
-      </div>*/
