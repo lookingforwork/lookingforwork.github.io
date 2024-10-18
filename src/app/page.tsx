@@ -7,16 +7,19 @@ import { FeatureRag } from "@/components/FeatureRag";
 import { FeatureAction } from "@/components/FeatureAction";
 import Faq from "@/components/Faq";
 import { Banner } from "@/components/Banner";
+import { LogoBanner } from "@/components/LogoBanner";
+import { PartnerBanner } from "@/components/PartnerBanner";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center min-h-screen max-w-7xl mx-auto px-6 sm:px-8">
       <Hero />
       <VideoPanel />
-      <Banner />
+      <PartnerBanner />
       <FeatureLights />
       <FeatureAction />
       <FeatureRag />
+      <LogoBanner />
       <DemoVideo />
       <Faq />
     </main>
