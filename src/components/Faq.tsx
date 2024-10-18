@@ -4,7 +4,7 @@ import { CtaButton } from "./CtaButton";
 
 interface FaqItemProps {
   question: string;
-  answer: string;
+  answer: React.ReactNode;
 }
 
 const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
@@ -20,7 +20,7 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
   }, [isOpen]);
 
   return (
-    <div className="border-b border-gray-700">
+    <div className="border-b border-transparent">
       <button className="text-left w-full" onClick={() => setIsOpen(!isOpen)}>
         <div className="flex justify-between items-center max-w-[535px] py-4">
           <span className="text-blueside-dark font-subtitle">{question}</span>
@@ -44,32 +44,57 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
 
 interface FaqItem {
   question: string;
-  answer: string;
+  answer: React.ReactNode;
 }
 
 const Faq: React.FC = () => {
   const faqs: FaqItem[] = [
     {
       question: "What does BlueSide do?",
-      answer:
-        "We've built integrations with Discord, WhatsApp and Slack to automate the movement of members in and out of your private community and chat spaces. Once a user subscribes to your Subbb they'll be automatically invited or added to your community. If they stop paying, they'll be removed.",
+      answer: (
+        <>
+          BlueSide analyses the{" "}
+          <a
+            href="https://support.microsoft.com/en-gb/office/track-changes-in-word-197ba630-0f5f-4a8e-9a77-3712475e806a"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Tracked Changes
+          </a>{" "}
+          in a Microsoft Word document. For each change it provides a
+          significance rating, summary and suggested action to take.
+        </>
+      ),
     },
     {
       question: "Who is BlueSide for?",
       answer:
-        "If a user stops paying, they will be automatically removed from your community spaces.",
+        "BlueSide is a tool for legal contracts, so if you deal with contracts frequently, BlueSide is a tool for you.",
     },
     {
       question: "Are my documents secure on BlueSide?",
       answer:
-        "Our setup process is designed to be quick and user-friendly. Most users can get started within minutes.",
+        "Yes, the privacy of your data is guaranteed by all the model providers we use, ensuring all your data is kept secure.",
     },
     {
-      question: "How does BlueSide integrate inside Mircosoft Word?",
-      answer:
-        "Yes, our platform supports various membership options including free trials, lifetime access, and tiered subscriptions. You can also set up form submissions for custom requirements.",
+      question: "How does BlueSide integrate inside Microsoft Word?",
+      answer: (
+        <>
+          Once you have signed up, all that&apos;s left is to download the
+          BlueSide Add-in from the{" "}
+          <a
+            href="https://appsource.microsoft.com/en-us/marketplace/apps?product=office&page=1&src=office&corrid=a7c69a7e-5f24-4398-95a3-3ee3f62a54db"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Microsoft Add-in Store
+          </a>{" "}
+          and it will be there next time you open Word.
+        </>
+      ),
     },
-    // ... (other FAQ items)
   ];
 
   return (

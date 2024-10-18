@@ -18,7 +18,7 @@ export default function Home() {
       <FeatureAction />
       <FeatureRag />
       <DemoVideo />
-      <Faq />
+      {/* <Faq /> */}
       {/* <FeatureOne /> */}
     </main>
   );
