@@ -25,4 +25,3 @@ export default function Home() {
     </main>
   );
 }
-//add micrsfot founders hub invovlement
