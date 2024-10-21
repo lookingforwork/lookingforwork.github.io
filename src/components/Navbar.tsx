@@ -1,19 +1,22 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const Navbar = () => {
   return (
     <header className="relative">
       <div className="animate-appear-500 flex max-w-7xl mx-auto p px-6 sm:px-8 justify-between">
         <div className="flex items-center text-2xl text-gray-800">
-          <span>
-            <Image
-              src="/img/BlueSide.svg"
-              alt="BlueSide"
-              width="32"
-              height="32"
-              className="min-w-48 max-w-48 pr-6"
-            />
-          </span>
+          <Link href="/">
+            <span>
+              <Image
+                src="/img/BlueSide.svg"
+                alt="BlueSide"
+                width="32"
+                height="32"
+                className="min-w-48 max-w-48 pr-6"
+              />
+            </span>
+          </Link>
           {/* <button className="transition-all duration-200 bg-transparent rounded-lg text-sm text-center leading-normal text-blueside-dark hover:bg-slate-300 hidden lg:flex laptop:text-sm lg:w-5/6 mt-5 mb-4 py-2 px-4">
             Product
           </button>
