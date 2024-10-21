@@ -7,7 +7,7 @@ export default function SupportPage() {
         <h2 className="text-3xl font-bold mb-6 mt-8">Support</h2>
         <p className="max-w-[535px] text-blueside-dark text-sm font-light">
           Please share your thoughts, questions, and ideas. We are here to help.
-          Email use at{" "}
+          Email us at{" "}
           <a
             href="mailto:jake@blueside.app"
             target="_blank"
