@@ -18,7 +18,7 @@ export const CtaButton = () => {
           className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white
             opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96"
         ></span>
-        <p>Join the waitlist</p>
+        <p>Book a demo</p>
         <svg
           width="15"
           height="15"
