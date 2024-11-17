@@ -9,6 +9,7 @@ import Faq from "@/components/Faq";
 import { Banner } from "@/components/Banner";
 import { LogoBanner } from "@/components/LogoBanner";
 import { PartnerBanner } from "@/components/PartnerBanner";
+import { Security } from "@/components/Security";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <FeatureLights />
       <FeatureAction />
       <FeatureRag />
+      <Security />
       <LogoBanner />
       <DemoVideo />
       <Faq />
