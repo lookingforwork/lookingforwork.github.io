@@ -20,9 +20,9 @@ export const Security = () => {
                     <div className="h-full flex flex-col">
                         <div className="flex items-center justify-between mb-4">
                             <h3 className="text-xl text-blueside-dark font-medium">No Training</h3>
-                            <div className="relative">
-                                <span className="h-4 w-4 rounded-full bg-green-500 animate-ping absolute inset-0"></span>
-                                <span className="h-4 w-4 rounded-full bg-green-500 relative"></span>
+                            <div className="relative mr-2">
+                                <span className="h-4 w-4 rounded-full bg-green-500/40 animate-ping absolute top-1/2 -translate-y-1/2"></span>
+                                <span className="h-4 w-4 rounded-full bg-green-500 absolute top-1/2 -translate-y-1/2"></span>
                             </div>
                         </div>
                         <p className="text-blueside-dark/80 text-sm">
@@ -36,9 +36,9 @@ export const Security = () => {
                     <div className="h-full flex flex-col">
                         <div className="flex items-center justify-between mb-4">
                             <h3 className="text-xl text-blueside-dark font-medium">Data Transparency</h3>
-                            <div className="relative">
-                                <span className="h-4 w-4 rounded-full bg-green-500 animate-ping absolute opacity-75"></span>
-                                <span className="h-4 w-4 rounded-full bg-green-500 relative"></span>
+                            <div className="relative mr-2">
+                                <span className="h-4 w-4 rounded-full bg-green-500/40 animate-ping absolute top-1/2 -translate-y-1/2"></span>
+                                <span className="h-4 w-4 rounded-full bg-green-500 absolute top-1/2 -translate-y-1/2"></span>
                             </div>
                         </div>
                         <p className="text-blueside-dark/80 text-sm">
@@ -52,9 +52,9 @@ export const Security = () => {
                     <div className="h-full flex flex-col">
                         <div className="flex items-center justify-between mb-4">
                             <h3 className="text-xl text-blueside-dark font-medium">GDPR Ready</h3>
-                            <div className="relative">
-                                <span className="h-4 w-4 rounded-full bg-green-500 animate-ping absolute opacity-75"></span>
-                                <span className="h-4 w-4 rounded-full bg-green-500 relative"></span>
+                            <div className="relative mr-2">
+                                <span className="h-4 w-4 rounded-full bg-green-500/40 animate-ping absolute top-1/2 -translate-y-1/2"></span>
+                                <span className="h-4 w-4 rounded-full bg-green-500 absolute top-1/2 -translate-y-1/2"></span>
                             </div>
                         </div>
                         <p className="text-blueside-dark/80 text-sm">
@@ -68,9 +68,9 @@ export const Security = () => {
                     <div className="h-full flex flex-col">
                         <div className="flex items-center justify-between mb-4">
                             <h3 className="text-xl text-blueside-dark font-medium">Data Redaction</h3>
-                            <div className="relative">
-                                <span className="h-4 w-4 rounded-full bg-yellow-400 animate-ping absolute opacity-75"></span>
-                                <span className="h-4 w-4 rounded-full bg-yellow-500 relative"></span>
+                            <div className="relative mr-2">
+                                <span className="h-4 w-4 rounded-full bg-yellow-500/40 animate-ping absolute top-1/2 -translate-y-1/2 left-0"></span>
+                                <span className="h-4 w-4 rounded-full bg-yellow-500 absolute top-1/2 -translate-y-1/2 left-0"></span>
                             </div>
                         </div>
                         <p className="text-blueside-dark/80 text-sm">
