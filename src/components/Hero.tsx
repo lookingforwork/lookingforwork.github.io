@@ -21,7 +21,6 @@ export const Hero = () => {
       </p>
       <div className="animate-appear-1500 flex flex-col sm:flex-row gap-4">
         <CtaButton />
-        <SecurityButton />
       </div>
     </div>
   );

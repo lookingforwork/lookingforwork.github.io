@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { ContactPopup } from "./ContactPopup";
+import { SecurityButton } from "./SecurityButton";
 
 export const Navbar = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -23,7 +24,8 @@ export const Navbar = () => {
             </span>
           </Link>
         </div>
-        <div>
+        <div className="flex items-center gap-4">
+          <SecurityButton />
           <button
             onClick={() => setIsPopupOpen(true)}
             className="bg-transparent ease-in-out transition-[background-color,color,padding,border-radius] duration-300 flex text-blueside-dark rounded-lg text-sm text-center leading-normal hover:bg-blueside-navy outline outline-1 -outline-offset-1 hover:outline-none hover:text-white laptop:text-sm mt-5 mb-4 py-2 px-4"

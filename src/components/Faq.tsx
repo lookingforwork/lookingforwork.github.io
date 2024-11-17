@@ -70,7 +70,7 @@ const Faq: React.FC = () => {
     {
       question: "Who is BlueSide for?",
       answer:
-        "BlueSide is a tool for legal contracts, so if you deal with contracts frequently, BlueSide is a tool for you.",
+        "BlueSide is best utilized by agile law firms that are looking to streamline contract negotiations.",
     },
     {
       question: "Are my documents secure on BlueSide?",
