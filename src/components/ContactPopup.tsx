@@ -34,8 +34,8 @@ export const ContactPopup = ({
                     <button
                         onClick={copyEmail}
                         className={`${copyText === "Copied!"
-                                ? "bg-green-500"
-                                : "bg-blueside hover:bg-blueside-600"
+                            ? "bg-green-500"
+                            : "bg-blueside hover:bg-blueside-600"
                             } text-white px-4 py-2 rounded-lg transition-colors duration-300`}
                     >
                         {copyText}
