@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Security = () => {
     return (
-        <div className="flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-24 py-6 lg:py-14">
+        <div id="security" className="flex flex-col items-center justify-center px-4 sm:px-8 md:px-12 lg:px-24 py-6 lg:py-14">
             <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl text-blueside-dark mb-6">
                     Your Data, Your Control
