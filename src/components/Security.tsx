@@ -8,9 +8,7 @@ export const Security = () => {
                     Your Data, Your Control
                 </h2>
                 <p className="sm:text-base lg:text-lg font-subtitle text-blueside-dark max-w-3xl">
-                    We never train on your data, maintain complete transparency about data storage,
-                    and ensure GDPR compliance. Coming soon: advanced data redaction features for
-                    enhanced privacy control.
+                    BlueSide has been built with the security of your data as a top priority.
                 </p>
             </div>
 
@@ -21,7 +19,7 @@ export const Security = () => {
                         <div className="flex items-center justify-between mb-4">
                             <h3 className="text-xl text-blueside-dark font-medium">No Training</h3>
                             <div className="relative mr-2">
-                                <div className="absolute top-1/2 -translate-y-1/2">
+                                <div className="absolute top-1/2 -translate-y-2">
                                     <span className="h-4 w-4 rounded-full bg-green-500/40 animate-ping absolute"></span>
                                     <span className="h-4 w-4 rounded-full bg-green-500 absolute"></span>
                                 </div>
@@ -39,14 +37,14 @@ export const Security = () => {
                         <div className="flex items-center justify-between mb-4">
                             <h3 className="text-xl text-blueside-dark font-medium">Data Transparency</h3>
                             <div className="relative mr-2">
-                                <div className="absolute top-1/2 -translate-y-1/2">
+                                <div className="absolute top-1/2 -translate-y-2">
                                     <span className="h-4 w-4 rounded-full bg-green-500/40 animate-ping absolute"></span>
                                     <span className="h-4 w-4 rounded-full bg-green-500 absolute"></span>
                                 </div>
                             </div>
                         </div>
                         <p className="text-blueside-dark/80 text-sm">
-                            Full visibility into where and how your data is stored and processed.
+                            We will always communicate with you about where your data is stored and processed.
                         </p>
                     </div>
                 </div>
@@ -57,7 +55,7 @@ export const Security = () => {
                         <div className="flex items-center justify-between mb-4">
                             <h3 className="text-xl text-blueside-dark font-medium">GDPR Ready</h3>
                             <div className="relative mr-2">
-                                <div className="absolute top-1/2 -translate-y-1/2">
+                                <div className="absolute top-1/2 -translate-y-2">
                                     <span className="h-4 w-4 rounded-full bg-green-500/40 animate-ping absolute"></span>
                                     <span className="h-4 w-4 rounded-full bg-green-500 absolute"></span>
                                 </div>
@@ -73,16 +71,16 @@ export const Security = () => {
                 <div className="group relative bg-white rounded-xl p-6 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
                     <div className="h-full flex flex-col">
                         <div className="flex items-center justify-between mb-4">
-                            <h3 className="text-xl text-blueside-dark font-medium">Data Redaction</h3>
+                            <h3 className="text-xl text-blueside-dark font-medium">Coming soon: PII Redaction</h3>
                             <div className="relative mr-2">
-                                <div className="absolute top-1/2 -translate-y-1/2">
+                                <div className="absolute top-1/2 -translate-y-2">
                                     <span className="h-4 w-4 rounded-full bg-yellow-500/40 animate-ping absolute"></span>
                                     <span className="h-4 w-4 rounded-full bg-yellow-500 absolute"></span>
                                 </div>
                             </div>
                         </div>
                         <p className="text-blueside-dark/80 text-sm">
-                            Coming soon: Advanced features to control and redact sensitive information.
+                            Advanced features to automatically redact sensitive information before it is processed.
                         </p>
                     </div>
                 </div>
