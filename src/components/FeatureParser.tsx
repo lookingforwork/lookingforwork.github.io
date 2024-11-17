@@ -18,11 +18,11 @@ export const FeatureParser = () => {
                             <div className="h-4 w-full bg-gray-100 rounded animate-pulse"></div>
                             <div className="h-4 w-3/4 bg-gray-100 rounded animate-pulse"></div>
                             <div className="h-4 w-5/6 bg-gray-100 rounded animate-pulse"></div>
-                            <div className="h-4 w-2/3 bg-gray-100 rounded animate-pulse"></div>
+                            <div className="h-4 w-2/3 bg-white rounded animate-pulse"></div>
                             <div className="h-4 w-full bg-gray-100 rounded animate-pulse"></div>
                             <div className="h-4 w-4/5 bg-gray-100 rounded animate-pulse"></div>
                             <div className="h-4 w-3/4 bg-gray-100 rounded animate-pulse"></div>
-                            <div className="h-4 w-full bg-gray-100 rounded animate-pulse"></div>
+                            <div className="h-4 w-full bg-white rounded animate-pulse"></div>
                             <div className="h-4 w-2/3 bg-gray-100 rounded animate-pulse"></div>
                             <div className="h-4 w-5/6 bg-gray-100 rounded animate-pulse"></div>
                             <div className="h-4 w-3/4 bg-gray-100 rounded animate-pulse"></div>
@@ -80,7 +80,7 @@ export const FeatureParser = () => {
                     Complete Document Understanding
                 </div>
                 <div className="sm:text-base lg:text-lg font-subtitle text-blueside-dark">
-                    Unlike other tools that look at changes in isolation, BlueSide reads and understands your entire document. This means we can spot how changes in one section might affect others, just like an experienced lawyer would.
+                    BlueSide reads and understands your entire document. This means we can spot how changes in one section might affect others, just like an experienced lawyer would.
                 </div>
             </div>
         </div>

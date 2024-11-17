@@ -20,9 +20,8 @@ export default function Home() {
       <PartnerBanner />
       <FeatureLights />
       <FeatureAction />
-      <FeatureRag />
-      <Security />
       <FeatureParser />
+      <Security />
       <LogoBanner />
       <DemoVideo />
       <Faq />
