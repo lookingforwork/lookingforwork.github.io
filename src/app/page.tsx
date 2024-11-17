@@ -10,6 +10,7 @@ import { Banner } from "@/components/Banner";
 import { LogoBanner } from "@/components/LogoBanner";
 import { PartnerBanner } from "@/components/PartnerBanner";
 import { Security } from "@/components/Security";
+import { FeatureParser } from "@/components/FeatureParser";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <FeatureAction />
       <FeatureRag />
       <Security />
+      <FeatureParser />
       <LogoBanner />
       <DemoVideo />
       <Faq />
