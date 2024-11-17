@@ -7,7 +7,7 @@ export const Hero = () => {
         className="animate-appear-1000 flex font-medium text-[44px] sm:text-5xl lg:mt-10 lg:text-title
         tracking-tight leading-none text-center text-blueside-dark"
       >
-        The AI co-pilot for contract negotiations
+        The AI Contract Negotiator
       </h1>
       <p
         className="animate-appear-1500 text-sm text-center font-subtitle leading-normal 
