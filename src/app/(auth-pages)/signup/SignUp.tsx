@@ -18,10 +18,11 @@ export default function SignUp() {
 
     const form = e.currentTarget;
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-    const password = (form.elements.namedItem("password") as HTMLInputElement).value;
+    const password = (form.elements.namedItem("password") as HTMLInputElement)
+      .value;
 
     try {
-      // 1. Create the user account
+      // Create the user account
       const { data: authData, error: authError } = await supabase.auth.signUp({
         email,
         password,
@@ -33,10 +34,25 @@ export default function SignUp() {
       if (authError) throw authError;
       if (!authData.user) throw new Error("No user data returned");
 
+      // Store EULA acceptance info in localStorage to be used after email confirmation
+      localStorage.setItem(
+        "pendingEulaAcceptance",
+        JSON.stringify({
+          email,
+          accepted_at: new Date().toISOString(),
+        })
+      );
+
+      // redirect to confirm email
       router.push("/confirm-email");
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : "An error occurred";
-      setError(errorMessage === 'Database error saving new user' ? 'A problem occured please try again, if the problem persists contact joel@blueside.app' : errorMessage);
+      const errorMessage =
+        err instanceof Error ? err.message : "An error occurred";
+      setError(
+        errorMessage === "Database error saving new user"
+          ? "A problem occured please try again, if the problem persists contact joel@blueside.app"
+          : errorMessage
+      );
     } finally {
       setIsLoading(false);
     }
