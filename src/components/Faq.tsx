@@ -70,12 +70,12 @@ const Faq: React.FC = () => {
     {
       question: "Who is BlueSide for?",
       answer:
-        "BlueSide is a tool for legal contracts, so if you deal with contracts frequently, BlueSide is a tool for you.",
+        "BlueSide is best utilized by agile law firms that are looking to streamline contract negotiations. This may include commercial, property, employment, regulatory, intellectual property agreements.",
     },
     {
       question: "Are my documents secure on BlueSide?",
       answer:
-        "Yes, the privacy of your data is guaranteed by all the model providers we use, ensuring all your data is kept secure.",
+        "Security is paramount to BlueSide. We use industry standard encryption and security protocols to ensure your data is secure. We also never train our models on any of the data you upload.",
     },
     {
       question: "How does BlueSide integrate inside Microsoft Word?",
@@ -84,7 +84,7 @@ const Faq: React.FC = () => {
           Once you have signed up, all that&apos;s left is to download the
           BlueSide Add-in from the{" "}
           <a
-            href="https://appsource.microsoft.com/en-us/marketplace/apps?product=office&page=1&src=office&corrid=a7c69a7e-5f24-4398-95a3-3ee3f62a54db"
+            href="https://appsource.microsoft.com/en-us/product/office/WA200007651?tab=Overview"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"

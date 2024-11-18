@@ -13,22 +13,20 @@ export const FeatureAction = () => {
         </div>
       </div>
       <div className="group rounded-2xl w-full max-w-[400px] lg:min-w-[400px] h-[300px] overflow-hidden flex flex-col items-center">
-        <div className="transition-all duration-500 bg-gray-100 h-20 w-10/12 max-w-80 group-hover:max-w-[22rem] group-hover:w-11/12 -top-4 -mb-4 relative z-10 rounded-xl shadow-md"></div>
-        <div className="transition-all duration-500 bg-gray-200 h-48 w-10/12 max-w-80 -top-2 group-hover:max-w-[22rem] group-hover:w-11/12 group-hover:h-[12.5rem] p-4 pt-6 rounded-md relative z-0 shadow-lg drop-shadow-2xl">
+        <div className="transition-all duration-500 bg-white h-20 w-10/12 max-w-80 group-hover:max-w-[22rem] group-hover:w-11/12 -top-4 -mb-4 relative z-10 rounded-xl shadow-md"></div>
+        <div className="transition-all duration-500 bg-white h-48 w-10/12 max-w-80 -top-3 group-hover:max-w-[22rem] group-hover:w-11/12 group-hover:h-[12.5rem] p-4 pt-6 rounded-xl relative z-0 shadow-lg drop-shadow-2xl">
           <div className="flex items-center mt-1">
             <span className="text-green-500 font-bold text-xl ml-1 mr-3">
               +
             </span>
-            <span className="font-light text-lg text-blueside-dark">
+            <span className="font-light text-lg text-gray-600">
               Recommended action
             </span>
           </div>
           <div className="transition-all duration-500 mt-5 space-y-5 group-hover:mt-7">
-            <div className="bg-gray-400 h-[2px] mb-2 w-full rounded-full"></div>
-            <div className="bg-gray-400 h-[2px] mb-2 w-full rounded-full"></div>
-            <div className="bg-gray-400 h-[2px] mb-2 w-full rounded-full"></div>
-            <div className="bg-gray-400 h-[2px] mb-2 w-full rounded-full"></div>
-            <div className="bg-gray-400 h-[2px] w-full rounded-full"></div>
+            <div className="h-4 w-full bg-gray-100 rounded animate-pulse"></div>
+            <div className="h-4 w-3/4 bg-gray-100 rounded animate-pulse"></div>
+            <div className="h-4 w-5/6 bg-gray-100 rounded animate-pulse"></div>
           </div>
         </div>
       </div>

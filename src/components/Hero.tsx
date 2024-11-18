@@ -1,4 +1,5 @@
 import { CtaButton } from "./CtaButton";
+import { SecurityButton } from "./SecurityButton";
 
 export const Hero = () => {
   return (
@@ -7,7 +8,7 @@ export const Hero = () => {
         className="animate-appear-1000 flex font-medium text-[44px] sm:text-5xl lg:mt-10 lg:text-title
         tracking-tight leading-none text-center text-blueside-dark"
       >
-        Speed through contracts
+        AI Co-Pilot For Contract Negotiations
       </h1>
       <p
         className="animate-appear-1500 text-sm text-center font-subtitle leading-normal 
@@ -16,9 +17,9 @@ export const Hero = () => {
         Powerful legal AI integrated into Microsoft Word, allowing you to{" "}
         <span className="inline-block line-through text-red-500">stumble</span>{" "}
         <span className="inline-block underline text-blue-500">breeze</span>{" "}
-        through contracts.
+        through contract negotiations.
       </p>
-      <div className="animate-appear-1500">
+      <div className="animate-appear-1500 flex flex-col sm:flex-row gap-4">
         <CtaButton />
       </div>
     </div>
