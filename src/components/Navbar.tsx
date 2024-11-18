@@ -5,9 +5,12 @@ import { useState } from "react";
 import { ContactPopup } from "./ContactPopup";
 import { SecurityButton } from "./SecurityButton";
 import { FeatureButton } from "./FeatureButton";
+import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
 
   return (
     <header className="relative">
@@ -24,12 +27,16 @@ export const Navbar = () => {
               />
             </span>
           </Link>
-          <div className="hidden sm:block">
-            <FeatureButton />
-          </div>
-          <div className="hidden sm:block">
-            <SecurityButton />
-          </div>
+          {isHomePage && (
+            <>
+              <div className="hidden sm:block">
+                <FeatureButton />
+              </div>
+              <div className="hidden sm:block">
+                <SecurityButton />
+              </div>
+            </>
+          )}
         </div>
         <div className="flex items-center">
           <button
