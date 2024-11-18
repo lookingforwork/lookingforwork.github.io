@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ContactPopup } from "./ContactPopup";
 import { SecurityButton } from "./SecurityButton";
+import { FeatureButton } from "./FeatureButton";
 
 export const Navbar = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -11,7 +12,7 @@ export const Navbar = () => {
   return (
     <header className="relative">
       <div className="animate-appear-500 flex max-w-7xl mx-auto p px-6 sm:px-8 justify-between">
-        <div className="flex items-center text-2xl text-gray-800">
+        <div className="flex items-center gap-4">
           <Link href="/">
             <span>
               <Image
@@ -23,9 +24,14 @@ export const Navbar = () => {
               />
             </span>
           </Link>
+          <div className="hidden sm:block">
+            <FeatureButton />
+          </div>
+          <div className="hidden sm:block">
+            <SecurityButton />
+          </div>
         </div>
-        <div className="flex items-center gap-4">
-          <SecurityButton />
+        <div className="flex items-center">
           <button
             onClick={() => setIsPopupOpen(true)}
             className="bg-transparent ease-in-out transition-[background-color,color,padding,border-radius] duration-300 flex text-blueside-dark rounded-lg text-sm text-center leading-normal hover:bg-blueside-navy outline outline-1 -outline-offset-1 hover:outline-none hover:text-white laptop:text-sm mt-5 mb-4 py-2 px-4"

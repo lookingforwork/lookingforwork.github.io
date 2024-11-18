@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const FeatureLights = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center px-0 sm:px-8 md:px-12 lg:px-24 py-6 lg:py-14">
+    <div id="features" className="flex flex-col lg:flex-row items-center justify-center px-0 sm:px-8 md:px-12 lg:px-24 py-6 lg:py-14">
       <div className="rounded-2xl w-full max-w-[400px] lg:min-w-[400px] h-[300px] overflow-hidden">
         <div className="relative p-4 sm:p-8">
           <div className="transition-all duration-500 absolute -left-12 hover:-left-4 top-4 flex h-80 w-full max-w-[384px] items-start justify-between rounded-xl bg-gray-100 p-4 sm:p-8 shadow-lg drop-shadow-2xl">
