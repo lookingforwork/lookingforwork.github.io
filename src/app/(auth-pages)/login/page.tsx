@@ -107,12 +107,21 @@ export default function LoginPage() {
             {isLoading ? 'Logging in...' : 'Login'}
           </button>
 
-          <p className="text-center text-xs text-gray-600 mt-4">
-            Don't have an account?{" "}
-            <Link href="/signup" className="text-blue-600 hover:underline">
-              Sign up here
+          <div className="text-center space-y-4">
+            <Link
+              href="/forgot-password"
+              className="text-xs text-blue-600 hover:underline"
+            >
+              Forgot your password?
             </Link>
-          </p>
+
+            <p className="text-xs text-gray-600">
+              Don't have an account?{" "}
+              <Link href="/signup" className="text-blue-600 hover:underline">
+                Sign up here
+              </Link>
+            </p>
+          </div>
         </form>
       </div>
     </div>

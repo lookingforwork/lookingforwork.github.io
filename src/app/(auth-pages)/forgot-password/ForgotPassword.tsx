@@ -21,7 +21,7 @@ export default function ForgotPassword() {
       });
 
       if (error) throw error;
-      
+
       setMessage('Check your email for the password reset link');
     } catch (error) {
       setMessage('Error sending reset password email');
@@ -31,53 +31,61 @@ export default function ForgotPassword() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
-        <div className="text-center">
-          <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
-            Reset your password
-          </h2>
-          <p className="mt-2 text-sm text-gray-600">
-            Enter your email address and well send you a link to reset your password
-          </p>
-        </div>
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="email" className="sr-only">
-              Email address
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-              placeholder="Email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
+    <div className="flex items-center justify-center pt-16 px-4 sm:px-0">
+      <div className="w-full max-w-[400px] p-4 sm:p-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-blueside-dark mb-6 sm:mb-8 text-center">
+          Reset Password
+        </h2>
+        <p className="text-center text-sm text-gray-600 mb-8">
+          Enter your email address and we'll send you a link to reset your password
+        </p>
 
+        <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
           <div>
-            <button
-              type="submit"
-              disabled={loading}
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
-              {loading ? 'Sending...' : 'Send reset link'}
-            </button>
+            <div className="relative">
+              <input
+                id="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="block text-xs px-4 sm:px-6 py-2.5 sm:py-3 w-full text-gray-900 bg-transparent rounded-full border border-blueside-dark focus:outline-none focus:ring-0 focus:border-blueside-dark peer"
+                placeholder=" "
+                required
+                disabled={loading}
+              />
+              <label
+                htmlFor="email"
+                className="absolute text-xs text-gray-500 dark:text-gray-400 duration-300 rounded-full transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-4 peer-focus:px-4 peer-focus:text-blueside-dark peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+              >
+                Email
+              </label>
+            </div>
           </div>
 
           {message && (
-            <div className="text-sm text-center text-indigo-600">
-              {message}
+            <div
+              className={`px-2 sm:px-3 py-2 sm:py-3 rounded-full text-xs break-words text-center ${message.includes('Error')
+                  ? 'bg-red-100 border border-red-400 text-red-600'
+                  : 'bg-green-100 border border-green-400 text-green-600'
+                }`}
+              role="alert"
+            >
+              <span className="block sm:inline">{message}</span>
             </div>
           )}
 
-          <div className="text-sm text-center">
+          <button
+            type="submit"
+            disabled={loading}
+            className="bg-blueside text-xs rounded-full hover:bg-blueside/90 text-white flex justify-center py-2.5 sm:py-3 w-full shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {loading ? 'Sending...' : 'Send Reset Link'}
+          </button>
+
+          <div className="text-center">
             <Link
               href="/login"
-              className="font-medium text-indigo-600 hover:text-indigo-500"
+              className="text-xs text-blue-600 hover:underline"
             >
               Return to login
             </Link>
