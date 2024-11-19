@@ -18,7 +18,6 @@ export default function AuthCallback() {
         const storedData = localStorage.getItem("pendingEulaAcceptance");
         if (!storedData) {
           throw new Error("EULA acceptance data not found");
-          // TODO: check to push to /error
         }
         const pendingEulaData = JSON.parse(storedData);
 
