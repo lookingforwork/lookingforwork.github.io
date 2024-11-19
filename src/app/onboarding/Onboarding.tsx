@@ -51,14 +51,14 @@ export const Onboarding = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg animate-pulse" />
-                            <Image
-                                src="/img/signup-preview.png"
-                                alt="Sign up preview"
-                                width={400}
-                                height={300}
+                        <div className="relative w-fit">
+                            <div className="absolute inset-0 rounded-xl" />
+                            <video
+                                src="/vid/signup-preview.mp4"
                                 className="rounded-lg shadow-lg"
+                                autoPlay
+                                muted
+                                loop
                             />
                         </div>
                     </div>
@@ -80,7 +80,7 @@ export const Onboarding = () => {
                                 <h2 className="text-xl text-blueside-dark font-medium">Download the Add-in</h2>
                             </div>
                             <p className="text-blueside-dark/80 mb-4">
-                                Install BlueSide directly from the Microsoft Add-in store, you can do this inside Microsoft Word or online using the button below.
+                                Install BlueSide directly from the Microsoft Add-in store, you can find our page using the button below.
                             </p>
                             <a
                                 href="https://appsource.microsoft.com/en-us/product/office/WA200007651"
@@ -93,14 +93,14 @@ export const Onboarding = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-lg animate-pulse" />
-                            <Image
-                                src="/img/store-preview.png"
-                                alt="Microsoft Store preview"
-                                width={400}
-                                height={300}
+                        <div className="relative w-fit">
+                            <div className="absolute inset-0 rounded-xl" />
+                            <video
+                                src="/vid/install-preview.mp4"
                                 className="rounded-lg shadow-lg"
+                                autoPlay
+                                muted
+                                loop
                             />
                         </div>
                     </div>
@@ -127,14 +127,14 @@ export const Onboarding = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-lg animate-pulse" />
-                            <Image
-                                src="/img/word-preview.png"
-                                alt="Word integration preview"
-                                width={400}
-                                height={300}
+                        <div className="relative w-fit">
+                            <div className="absolute inset-0 rounded-xl" />
+                            <video
+                                src="/vid/login-preview.mp4"
                                 className="rounded-lg shadow-lg"
+                                autoPlay
+                                muted
+                                loop
                             />
                         </div>
                     </div>
@@ -161,14 +161,14 @@ export const Onboarding = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 to-red-500/10 rounded-lg animate-pulse" />
-                            <Image
-                                src="/img/traffic-light-preview.png"
-                                alt="Traffic light indicators preview"
-                                width={400}
-                                height={300}
+                        <div className="relative w-fit">
+                            <div className="absolute inset-0 rounded-xl" />
+                            <video
+                                src="/vid/light-preview.mp4"
                                 className="rounded-lg shadow-lg"
+                                autoPlay
+                                muted
+                                loop
                             />
                         </div>
                     </div>
@@ -195,14 +195,14 @@ export const Onboarding = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <div className="relative">
-                            <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-blue-500/10 rounded-lg animate-pulse" />
-                            <Image
-                                src="/img/filter-preview.png"
-                                alt="Filtering options preview"
-                                width={400}
-                                height={300}
+                        <div className="relative w-fit">
+                            <div className="absolute inset-0 bg-gradient-to-r from-white/0 to-blueside-600/5 rounded-xl" />
+                            <video
+                                src="/vid/filter-preview_1.mp4"
                                 className="rounded-lg shadow-lg"
+                                autoPlay
+                                muted
+                                loop
                             />
                         </div>
                     </div>
