@@ -2,6 +2,7 @@
 import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import { useRouter } from "next/navigation";
 import { useState, FormEvent, useEffect } from "react";
+import Link from "next/link";
 
 export default function SignUp() {
   const supabase = createClientComponentClient();
@@ -158,7 +159,14 @@ export default function SignUp() {
               className="rounded border-gray-300 text-blueside focus:ring-blueside"
             />
             <label htmlFor="eula-checkbox" className="text-blueside-dark text-xs">
-              I accept the Terms of Service and Privacy Policy
+              I accept the{" "}
+              <Link href="/terms" className="text-blue-600 hover:underline">
+                Terms of Service
+              </Link>{" "}
+              and{" "}
+              <Link href="/privacy-policy" className="text-blue-600 hover:underline">
+                Privacy Policy
+              </Link>
             </label>
           </div>
 
