@@ -9,6 +9,7 @@ export default function AuthCallback() {
   const processingRef = useRef(false);
 
   useEffect(() => {
+
     const handleCallback = async () => {
       // Check if we're already processing
       if (processingRef.current) return;
@@ -64,8 +65,13 @@ export default function AuthCallback() {
   }, [router, supabase]);
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <p>Confirming your email...</p>
+    <div className="flex flex-col gap-4 items-center min-h-screen bg-gradient-to-b from-background to-muted pt-32">
+      <div className="p-8 rounded-lg bg-card shadow-lg flex flex-col items-center gap-4">
+        <div className="spinner h-8 w-8 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin" />
+        <p className="text-lg font-medium text-muted-foreground">
+          Confirming your email...
+        </p>
+      </div>
     </div>
   );
 }

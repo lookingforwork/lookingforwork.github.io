@@ -1,16 +1,43 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ContactPopup } from "./ContactPopup";
 import { SecurityButton } from "./SecurityButton";
 import { FeatureButton } from "./FeatureButton";
 import { usePathname } from "next/navigation";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import { SignOutButton } from "./auth/SignOutButton";
 
 export const Navbar = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const pathname = usePathname();
   const isHomePage = pathname === "/";
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const supabase = createClientComponentClient();
+
+  useEffect(() => {
+    const checkUser = async () => {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      setIsLoggedIn(!!user);
+    };
+
+    checkUser();
+
+    // Set up realtime subscription for auth state changes
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setIsLoggedIn(!!session);
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, [supabase]);
 
   return (
     <header className="relative">
@@ -38,7 +65,25 @@ export const Navbar = () => {
             </>
           )}
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-x-2">
+          {isLoggedIn ? (
+            <>
+              <Link
+                href="/account"
+                className="bg-transparent text-blueside-dark hover:text-gray-500 transition-colors duration-300 text-sm laptop:text-sm mt-5 mb-4 py-2 px-4"
+                >
+                Account
+              </Link>
+              <SignOutButton />
+            </>
+          ) : (
+            <Link
+              href="/login"
+              className="bg-transparent text-blueside-dark hover:text-gray-500 transition-colors duration-300 text-sm laptop:text-sm mt-5 mb-4 py-2 px-4"
+            >
+              Sign In
+            </Link>
+          )}
           <button
             onClick={() => setIsPopupOpen(true)}
             className="bg-transparent ease-in-out transition-[background-color,color,padding,border-radius] duration-300 flex text-blueside-dark rounded-lg text-sm text-center leading-normal hover:bg-blueside-navy outline outline-1 -outline-offset-1 hover:outline-none hover:text-white laptop:text-sm mt-5 mb-4 py-2 px-4"
@@ -47,7 +92,10 @@ export const Navbar = () => {
           </button>
         </div>
       </div>
-      <ContactPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
+      <ContactPopup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
     </header>
   );
 };

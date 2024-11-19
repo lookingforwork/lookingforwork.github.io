@@ -30,48 +30,64 @@ export default function Account() {
   if (!user) return null;
 
   return (
-    <div>
-      <p>Click here to get started now...</p>
-      <button
-        onClick={() => router.push("/onboarding")}
-        className="w-full py-2 px-4 bg-green-300"
-      >
-        Get started now
-      </button>
-      <h1>Manage Account</h1>
+    <div className="flex items-center justify-center pt-16 px-4 sm:px-0">
+      <div className="w-full max-w-[450px] p-4 sm:p-8">
+        <h1 className="text-2xl sm:text-3xl font-bold text-blueside-dark mb-6 sm:mb-8 text-center">
+          Account Settings
+        </h1>
 
-      {!showDeleteInfo ? (
-        <button
-          onClick={() => setShowDeleteInfo(true)}
-          className="w-full py-2 px-4 bg-red-500 text-white"
-        >
-          Delete account
-        </button>
-      ) : (
-        <div className="mt-4 p-4 border border-red-200 bg-red-50 rounded-md">
-          <h2 className="font-semibold mb-2">How to Delete Your Account</h2>
-          <p>
-            To delete your account and all associated data, please email{" "}
-            <a
-              href="mailto:joel@blueside.app"
-              className="text-blue-600 underline"
+        <div className="space-y-6 sm:space-y-8">
+          <div className="bg-green-50 rounded-lg p-6 border border-green-200">
+            <h2 className="text-xl text-blueside-dark font-medium mb-4">
+              Get Started with BlueSide
+            </h2>
+            <p className="text-gray-600 mb-6 text-sm">
+              Ready to enhance your contract review process? Click below to get set up in Microsoft Word.
+            </p>
+            <button
+              onClick={() => router.push("/onboarding")}
+              className="bg-blueside text-sm rounded-full hover:bg-blueside/90 text-white flex justify-center py-2.5 sm:py-3 w-full shadow-lg"
             >
-              joel@blueside.app
-            </a>
-          </p>
-          <p className="mt-2 text-sm text-gray-600">
-            Please include your email address ({user.email}) in the request. We
-            will process your deletion request within 30 days as required by
-            GDPR.
-          </p>
-          <button
-            onClick={() => setShowDeleteInfo(false)}
-            className="mt-4 px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded"
-          >
-            Close
-          </button>
+              Set Up BlueSide
+            </button>
+          </div>
+
+          {!showDeleteInfo ? (
+            <button
+              onClick={() => setShowDeleteInfo(true)}
+              className="bg-white text-sm rounded-full hover:bg-red-50 text-red-500 flex justify-center py-2.5 sm:py-3 w-full border border-red-500"
+            >
+              Delete Account
+            </button>
+          ) : (
+            <div className="bg-red-50 rounded-lg p-6 border border-red-200">
+              <h3 className="text-lg font-semibold text-blueside-dark mb-4">
+                How to Delete Your Account
+              </h3>
+              <p className="text-gray-600 mb-4">
+                To delete your account and all associated data, please email{" "}
+                <a
+                  href="mailto:joel@blueside.app"
+                  className="text-blueside hover:underline"
+                >
+                  joel@blueside.app
+                </a>
+              </p>
+              <p className="text-sm text-gray-500 mb-6">
+                Please include your email address ({user.email}) in the request. We
+                will process your deletion request within 30 days as required by
+                GDPR.
+              </p>
+              <button
+                onClick={() => setShowDeleteInfo(false)}
+                className="bg-gray-100 text-sm rounded-full hover:bg-gray-200 text-blueside-dark flex justify-center py-2.5 sm:py-3 w-full"
+              >
+                Close
+              </button>
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 }
