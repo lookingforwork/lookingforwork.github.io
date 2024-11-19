@@ -1,24 +1,24 @@
 "use client";
 
-import { useState } from 'react';
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
-import { useRouter } from 'next/navigation';
+import { useState } from "react";
+import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
+import { useRouter } from "next/navigation";
 
 export default function ResetPassword() {
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
   const router = useRouter();
   const supabase = createClientComponentClient();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setMessage('');
+    setMessage("");
 
     if (password !== confirmPassword) {
-      setMessage('Passwords do not match');
+      setMessage("Passwords do not match");
       setLoading(false);
       return;
     }
@@ -30,11 +30,15 @@ export default function ResetPassword() {
 
       if (error) throw error;
 
-      setMessage('Password updated successfully');
+      setMessage("Password updated successfully. Redirecting...");
+
+      // Sign out the user
+      await supabase.auth.signOut();
+
       // Redirect to login page after successful password reset
-      setTimeout(() => router.push('/login'), 2000);
+      setTimeout(() => router.push("/login"), 2000);
     } catch (error) {
-      setMessage('Error updating password');
+      setMessage("Error updating password");
     } finally {
       setLoading(false);
     }
@@ -91,14 +95,12 @@ export default function ResetPassword() {
               disabled={loading}
               className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              {loading ? 'Updating...' : 'Update password'}
+              {loading ? "Updating..." : "Update password"}
             </button>
           </div>
 
           {message && (
-            <div className="text-sm text-center text-indigo-600">
-              {message}
-            </div>
+            <div className="text-sm text-center text-indigo-600">{message}</div>
           )}
         </form>
       </div>
