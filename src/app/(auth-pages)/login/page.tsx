@@ -91,7 +91,7 @@ export default function LoginPage() {
 
           {error && (
             <div
-              className="bg-red-100 border border-red-400 text-red-600 px-2 sm:px-3 py-2 sm:py-3 rounded-lg text-xs break-words"
+              className="bg-red-100 border border-red-400 text-red-600 px-2 sm:px-3 py-2 sm:py-3 rounded-full text-xs break-words"
               role="alert"
             >
               <span className="block sm:inline">{error}</span>
