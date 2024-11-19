@@ -30,38 +30,32 @@ export default function Account() {
   if (!user) return null;
 
   return (
-    <div className="max-w-2xl mx-auto w-full px-6 py-12">
-      <div className="bg-white rounded-xl shadow-lg p-8">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl text-blueside-dark mb-8">
+    <div className="flex items-center justify-center pt-16 px-4 sm:px-0">
+      <div className="w-full max-w-[450px] p-4 sm:p-8">
+        <h1 className="text-2xl sm:text-3xl font-bold text-blueside-dark mb-6 sm:mb-8 text-center">
           Account Settings
         </h1>
 
-        <div className="mb-12">
-          <div className="bg-green-50 rounded-lg p-6 mb-8 border border-green-200">
+        <div className="space-y-6 sm:space-y-8">
+          <div className="bg-green-50 rounded-lg p-6 border border-green-200">
             <h2 className="text-xl text-blueside-dark font-medium mb-4">
               Get Started with BlueSide
             </h2>
             <p className="text-gray-600 mb-6 text-sm">
-              Ready to enhance your contract review process? Click below to set up BlueSide in your Microsoft Word.
+              Ready to enhance your contract review process? Click below to get set up in Microsoft Word.
             </p>
             <button
               onClick={() => router.push("/onboarding")}
-              className="w-full py-3 px-4 bg-blueside hover:bg-blueside-600 text-white rounded-lg transition-colors duration-300"
+              className="bg-blueside text-sm rounded-full hover:bg-blueside/90 text-white flex justify-center py-2.5 sm:py-3 w-full shadow-lg"
             >
               Set Up BlueSide
             </button>
           </div>
-        </div>
-
-        <div className="border-t border-gray-200 pt-8">
-          <h2 className="text-xl text-blueside-dark font-medium mb-6">
-            Account Management
-          </h2>
 
           {!showDeleteInfo ? (
             <button
               onClick={() => setShowDeleteInfo(true)}
-              className="w-full py-3 px-4 bg-white border border-red-500 text-red-500 rounded-lg hover:bg-red-50 transition-colors duration-300"
+              className="bg-white text-sm rounded-full hover:bg-red-50 text-red-500 flex justify-center py-2.5 sm:py-3 w-full border border-red-500"
             >
               Delete Account
             </button>
@@ -86,7 +80,7 @@ export default function Account() {
               </p>
               <button
                 onClick={() => setShowDeleteInfo(false)}
-                className="w-full py-2 px-4 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors duration-300 text-blueside-dark"
+                className="bg-gray-100 text-sm rounded-full hover:bg-gray-200 text-blueside-dark flex justify-center py-2.5 sm:py-3 w-full"
               >
                 Close
               </button>
