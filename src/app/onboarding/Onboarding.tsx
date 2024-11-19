@@ -94,7 +94,7 @@ export const Onboarding = () => {
                                 <h2 className="text-xl text-blueside-dark font-medium">Create an Account</h2>
                             </div>
                             <p className="text-blueside-dark/80 mb-4">
-                                If you haven't already, sign up for a BlueSide account to get started. You'll need to verify your email address.
+                                If you haven&apos;t already, sign up for a BlueSide account to get started. You&apos;ll need to verify your email address.
                             </p>
                             <Link
                                 href="/signup"
