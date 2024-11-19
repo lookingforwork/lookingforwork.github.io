@@ -51,7 +51,7 @@ export default function AuthCallback() {
           localStorage.removeItem("pendingEulaAcceptance");
 
           // Successful verification - redirect to account page
-          router.push("/account");
+          router.push("/welcome");
         }
       } catch (error) {
         console.error("Error recording EULA acceptance:", error);
