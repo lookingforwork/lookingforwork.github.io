@@ -3,8 +3,62 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+
+const useIntersectionObserver = (callback: (isIntersecting: boolean) => void) => {
+    const elementRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                callback(entry.isIntersecting);
+            },
+            { threshold: 1.0 } // Video will play when 80% visible
+        );
+
+        const element = elementRef.current;
+        if (element) {
+            observer.observe(element);
+        }
+
+        return () => {
+            if (element) {
+                observer.unobserve(element);
+            }
+        };
+    }, [callback]);
+
+    return elementRef;
+};
 
 export const Onboarding = () => {
+    const VideoPlayer = ({ src }: { src: string }) => {
+        const videoRef = useRef<HTMLVideoElement>(null);
+        const containerRef = useIntersectionObserver((isIntersecting) => {
+            if (videoRef.current) {
+                if (isIntersecting) {
+                    videoRef.current.play();
+                } else {
+                    videoRef.current.pause();
+                }
+            }
+        });
+
+        return (
+            <div ref={containerRef} className="relative w-fit">
+                <div className="absolute inset-0 rounded-xl" />
+                <video
+                    ref={videoRef}
+                    src={src}
+                    className="rounded-lg shadow-lg"
+                    muted
+                    loop
+                    playsInline
+                />
+            </div>
+        );
+    };
+
     return (
         <div className="w-full max-w-4xl mx-auto py-12">
             {/* Header */}
@@ -40,7 +94,7 @@ export const Onboarding = () => {
                                 <h2 className="text-xl text-blueside-dark font-medium">Create an Account</h2>
                             </div>
                             <p className="text-blueside-dark/80 mb-4">
-                                Sign up for a BlueSide account to get started. You'll need to verify your email address.
+                                If you haven't already, sign up for a BlueSide account to get started. You'll need to verify your email address.
                             </p>
                             <Link
                                 href="/signup"
@@ -51,16 +105,7 @@ export const Onboarding = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <div className="relative w-fit">
-                            <div className="absolute inset-0 rounded-xl" />
-                            <video
-                                src="/vid/signup-preview.mp4"
-                                className="rounded-lg shadow-lg"
-                                autoPlay
-                                muted
-                                loop
-                            />
-                        </div>
+                        <VideoPlayer src="/vid/signup-preview.mp4" />
                     </div>
                 </motion.div>
 
@@ -80,29 +125,12 @@ export const Onboarding = () => {
                                 <h2 className="text-xl text-blueside-dark font-medium">Download the Add-in</h2>
                             </div>
                             <p className="text-blueside-dark/80 mb-4">
-                                Install BlueSide directly from the Microsoft Add-in store, you can find our page using the button below.
+                                Install BlueSide directly from inside Microsoft Word. Click the add-in button in the top right of the screen then search for BlueSide.
                             </p>
-                            <a
-                                href="https://appsource.microsoft.com/en-us/product/office/WA200007651"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block bg-blueside text-white px-6 py-2 rounded-full hover:bg-blueside/90 transition-colors"
-                            >
-                                Get Add-in
-                            </a>
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <div className="relative w-fit">
-                            <div className="absolute inset-0 rounded-xl" />
-                            <video
-                                src="/vid/install-preview.mp4"
-                                className="rounded-lg shadow-lg"
-                                autoPlay
-                                muted
-                                loop
-                            />
-                        </div>
+                        <VideoPlayer src="/vid/store-preview.mp4" />
                     </div>
                 </motion.div>
 
@@ -127,16 +155,7 @@ export const Onboarding = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <div className="relative w-fit">
-                            <div className="absolute inset-0 rounded-xl" />
-                            <video
-                                src="/vid/login-preview.mp4"
-                                className="rounded-lg shadow-lg"
-                                autoPlay
-                                muted
-                                loop
-                            />
-                        </div>
+                        <VideoPlayer src="/vid/login-preview.mp4" />
                     </div>
                 </motion.div>
 
@@ -161,16 +180,7 @@ export const Onboarding = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <div className="relative w-fit">
-                            <div className="absolute inset-0 rounded-xl" />
-                            <video
-                                src="/vid/light-preview.mp4"
-                                className="rounded-lg shadow-lg"
-                                autoPlay
-                                muted
-                                loop
-                            />
-                        </div>
+                        <VideoPlayer src="/vid/light-preview.mp4" />
                     </div>
                 </motion.div>
 
@@ -195,16 +205,7 @@ export const Onboarding = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2">
-                        <div className="relative w-fit">
-                            <div className="absolute inset-0 bg-gradient-to-r from-white/0 to-blueside-600/5 rounded-xl" />
-                            <video
-                                src="/vid/filter-preview_1.mp4"
-                                className="rounded-lg shadow-lg"
-                                autoPlay
-                                muted
-                                loop
-                            />
-                        </div>
+                        <VideoPlayer src="/vid/filter-preview_1.mp4" />
                     </div>
                 </motion.div>
             </div>
