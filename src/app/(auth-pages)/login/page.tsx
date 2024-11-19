@@ -2,6 +2,7 @@
 import { useState, FormEvent } from 'react';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function LoginPage() {
   const supabase = createClientComponentClient();
@@ -105,6 +106,13 @@ export default function LoginPage() {
           >
             {isLoading ? 'Logging in...' : 'Login'}
           </button>
+
+          <p className="text-center text-xs text-gray-600 mt-4">
+            Don't have an account?{" "}
+            <Link href="/signup" className="text-blue-600 hover:underline">
+              Sign up here
+            </Link>
+          </p>
         </form>
       </div>
     </div>

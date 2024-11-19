@@ -186,6 +186,13 @@ export default function SignUp() {
           >
             {isLoading ? "Creating Account..." : "Sign Up"}
           </button>
+
+          <p className="text-center text-xs text-gray-600 mt-4">
+            Already have an account?{" "}
+            <Link href="/login" className="text-blue-600 hover:underline">
+              Login here
+            </Link>
+          </p>
         </form>
       </div>
     </div>
