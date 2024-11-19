@@ -60,7 +60,7 @@ export default function SignUp() {
         err instanceof Error ? err.message : "An error occurred";
       setError(
         errorMessage === "Database error saving new user"
-          ? "A problem occurred please try again, if the problem persists contact joel@blueside.app"
+          ? "Check you have entered the correct email and try again, if the problem persists please contact joel@blueside.app"
           : errorMessage
       );
     } finally {
