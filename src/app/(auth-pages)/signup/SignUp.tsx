@@ -68,13 +68,13 @@ export default function SignUp() {
   };
 
   return (
-    <div className="flex items-center justify-center pt-16">
-      <div className="w-[400px] p-8">
-        <h2 className="text-3xl font-bold text-blueside-dark mb-8 text-center">
+    <div className="flex items-center justify-center pt-16 px-4 sm:px-0">
+      <div className="w-full max-w-[400px] p-4 sm:p-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-blueside-dark mb-6 sm:mb-8 text-center">
           Create Account
         </h2>
 
-        <form onSubmit={handleSignUp} className="space-y-6">
+        <form onSubmit={handleSignUp} className="space-y-4 sm:space-y-6">
           <div>
             <div className="relative">
               <input
@@ -82,7 +82,7 @@ export default function SignUp() {
                 name="email"
                 type="email"
                 required
-                className="block text-xs px-6 py-3 w-full text-gray-900 bg-transparent rounded-full border border-blueside-dark focus:outline-none focus:ring-0 focus:border-blueside-dark peer"
+                className="block text-xs px-4 sm:px-6 py-2.5 sm:py-3 w-full text-gray-900 bg-transparent rounded-full border border-blueside-dark focus:outline-none focus:ring-0 focus:border-blueside-dark peer"
                 placeholder=" "
                 disabled={isLoading}
               />
@@ -164,7 +164,7 @@ export default function SignUp() {
 
           {error && (
             <div
-              className="bg-red-100 border border-red-400 text-red-600 px-3 py-3 rounded-lg text-xs break-words"
+              className="bg-red-100 border border-red-400 text-red-600 px-2 sm:px-3 py-2 sm:py-3 rounded-lg text-xs break-words"
               role="alert"
             >
               <span className="block sm:inline">{error}</span>
@@ -174,7 +174,7 @@ export default function SignUp() {
           <button
             type="submit"
             disabled={!agreed || isLoading || !passwordsMatch || !isPasswordValid}
-            className="bg-blueside text-xs rounded-full hover:bg-blueside/90 text-white flex justify-center py-3 w-full shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-blueside text-xs rounded-full hover:bg-blueside/90 text-white flex justify-center py-2.5 sm:py-3 w-full shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isLoading ? "Creating Account..." : "Sign Up"}
           </button>
