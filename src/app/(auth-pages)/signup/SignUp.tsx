@@ -70,7 +70,7 @@ export default function SignUp() {
 
   return (
     <div className="flex items-center justify-center pt-16 px-4 sm:px-0">
-      <div className="w-full max-w-[400px] p-4 sm:p-8">
+      <div className="w-full max-w-[400px] sm:p-8">
         <h2 className="text-2xl sm:text-3xl font-bold text-blueside-dark mb-6 sm:mb-8 text-center">
           Create Account
         </h2>
@@ -117,7 +117,7 @@ export default function SignUp() {
               </label>
             </div>
             {password && !isPasswordValid && (
-              <p className="mt-2 text-xs text-red-500 break-words">
+              <p className="mt-2 max-w-[300px] text-xs text-red-500">
                 Password must be at least 8 characters long and include one special character
               </p>
             )}
@@ -144,7 +144,7 @@ export default function SignUp() {
               </label>
             </div>
             {confirmPassword && !passwordsMatch && (
-              <p className="mt-2 text-xs text-red-500">
+              <p className="mt-2  max-w-[300px] text-xs text-red-500">
                 Passwords do not match
               </p>
             )}
