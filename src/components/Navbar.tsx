@@ -28,6 +28,7 @@ export const Navbar = () => {
 
     checkUser();
 
+    // Set up realtime subscription for auth state changes
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
