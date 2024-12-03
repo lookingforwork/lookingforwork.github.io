@@ -22,7 +22,7 @@ export const VideoPanel: React.FC = () => {
         muted
         playsInline
       >
-        <source src="/vid/blueside_website_demo_3mb.mp4" type="video/mp4" />
+        <source src="/vid/blueside_website_demo_dec.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>

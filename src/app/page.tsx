@@ -11,6 +11,7 @@ import { LogoBanner } from "@/components/LogoBanner";
 import { PartnerBanner } from "@/components/PartnerBanner";
 import { Security } from "@/components/Security";
 import { FeatureParser } from "@/components/FeatureParser";
+import { FeatureEmail } from "@/components/FeatureEmail";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <FeatureLights />
       <FeatureAction />
       <FeatureParser />
+      <FeatureEmail />
       <Security />
       <LogoBanner />
       <DemoVideo />
