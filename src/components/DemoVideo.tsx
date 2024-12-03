@@ -2,7 +2,10 @@ import { Video } from "./Video";
 
 export const DemoVideo = () => {
   return (
-    <div id="demo-video" className="flex flex-col justify-center w-full mt-16 sm:mt-32">
+    <div
+      id="demo-video"
+      className="flex flex-col justify-center w-full mt-16 sm:mt-32"
+    >
       <div className="sm:mx-12 px-0 lg:px-12 lg:w-2/3 text-blueside-dark">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-6">
           Watch the Demo
@@ -13,7 +16,7 @@ export const DemoVideo = () => {
         </p>
       </div>
       <div className="w-full p-0 sm:p-12 rounded-xl">
-        <Video videoId="YBVI3Ob74xE" />
+        <Video videoId="RjzEH2FMeMw" />
       </div>
     </div>
   );
