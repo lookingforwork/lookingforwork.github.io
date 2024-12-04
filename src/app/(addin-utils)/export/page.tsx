@@ -13,7 +13,8 @@ export default function ExportPage() {
   let parsedData: ChangeData[] = [];
   try {
     if (data) {
-      parsedData = JSON.parse(decodeURIComponent(data));
+      const decodedData = decodeURIComponent(atob(data));
+      parsedData = JSON.parse(decodedData);
     }
   } catch (error) {
     console.error("Error parsing data:", error);
