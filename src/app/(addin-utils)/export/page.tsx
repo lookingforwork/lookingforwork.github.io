@@ -1,12 +1,13 @@
 "use client";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 interface ChangeData {
   rating: number;
   reasoning: string;
 }
 
-export default function ExportPage() {
+function ExportPageContent() {
   const searchParams = useSearchParams();
   const data = searchParams.get("data");
 
@@ -105,5 +106,13 @@ export default function ExportPage() {
         )}
       </div>
     </main>
+  );
+}
+
+export default function ExportPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ExportPageContent />
+    </Suspense>
   );
 }
